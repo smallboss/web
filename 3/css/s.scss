@@ -1,0 +1,36 @@
+.fadeInDown#mitsubishi, .fadeInDown#mazda {
+   -webkit-animation-delay: .3s;
+   -moz-animation-delay: .3s;
+   animation-delay: .3s;
+}
+
+.fadeInDown#subaru, .fadeInDown#toyota {
+   -webkit-animation-delay: 0s;
+   -moz-animation-delay: 0s;
+   animation-delay: 0s;
+}
+
+// .fadeInDown#toyota {
+//    -webkit-animation-delay: 0s;
+//    -moz-animation-delay: 0s;
+//    animation-delay: 0s;
+// }
+
+// .fadeOutUp#subaru {
+//    -webkit-animation-delay: .3s;
+//    -moz-animation-delay: .3s;
+//    animation-delay: .3s;
+}
+
+.fadeOutUp#mitsubishi, .fadeOutUp#mazda {
+   -webkit-animation-delay: 0s;
+   -moz-animation-delay: 0s;
+   animation-delay: 0s;
+}
+
+
+.fadeOutUp#tsubaru, .fadeOutUp#toyota {
+   -webkit-animation-delay: .3s;
+   -moz-animation-delay: .3s;
+   animation-delay: .3s;
+}

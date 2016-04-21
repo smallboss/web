@@ -1,0 +1,63 @@
+.head {
+  background-color: #201F24;
+
+  .navbar {
+    background-color: #201F24;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border: 0px;
+
+
+    font-size: 20px;
+
+    li {
+      a {
+        font-family: "Open sans","Segoe UI",Arial,sans-serif;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #446786;
+      }
+        
+      &:hover, &.active{
+        a {
+          background-color: rgb(62, 61, 61);
+          color: rgb(86, 155, 22);
+        }
+
+        .droped {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.nav {
+  //@extend .text-uppercase;
+
+  .droped {
+    list-style: none;
+    display: none;
+    // display: inline-block;
+    font-size: 14px;
+    margin-bottom: 0px;
+    height: 53px;
+
+    li{
+      float: left;
+      margin-right: 10px;
+
+      img {
+        height: 24px;
+      }
+    }
+  }
+
+  li {
+    a {
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+ @import "bootstrap";
+ @import "fluidbox";
+ //@import "navbar";
+ @import "carousel";
+
+ body{
+   background-color: #2E2D32;
+ }
+
+.page-wrapper {
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: #201F24;
+}
+
+.cont-wrapper {
+   width: 940px;
+   margin-left: auto;
+   margin-right: auto;
+
+   .row-data{
+      @extend .col-lg-12;
+         
+      font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 18px;
+      color: rgba(152, 152, 152, 0.81);
+      margin: 10px 0px;
+      text-align: justify;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+   }
+
+   p{
+      font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 18px;
+      color: rgba(90, 141, 83, 0.91);
+   }
+
+   #jap-content{
+      p {
+         font-family: "Open Sans";
+         font-size: 18px;
+         color: rgba(152, 152, 152, 0.81);
+      }
+   }
+}
+
+a {
+   outline:none !important;
+}
+
+div.tab-jap-container{
+   .dots-japans {
+      @extend .row;
+      text-align: center;
+
+      .dot-jap {
+         @extend .col-lg-3;
+         @extend .col-md-3;
+         @extend .col-sm-3;
+         @extend .col-xs-6;
+
+         padding-top: 15px;
+
+         .brand-name{
+            font-size: 30px;
+            color: rgba(0, 197, 37, 0.40);
+         }
+
+         .brand-text{
+            font-size: 16px;
+            color: rgba(0, 197, 37, 0.40);
+         }
+
+         &.active{
+            background-color: rgb(46, 45, 50);
+            margin-bottom: -3px;
+            border-bottom: 3px solid RGBA(165, 224, 7, 0.61);
+
+            .brand-name{
+               color: rgb(86, 102, 158);
+            }
+
+            .brand-text{
+               color: RGBA(165, 224, 7, 0.61);
+            }
+         }
+      }
+   }
+}
+
+
+
+.tab-pane {
+   width: 1000px;
+   margin-left: -30px;
+}
+
+
+.brand-name {
+   font-size: 25px;
+   margin-top: 10px;
+}
+
+.page-wrapper {
+	//width: 940px;
+}
+
+.img-model {
+   width: 90%;
+}
+
+.boxHidded {
+   visibility: hidden;
+}
+
+.fadeInDown,  
+.fadeInLeft
+{
+   visibility: visible;
+}
+
+@mixin animation-delay($delay_sec){
+   -webkit-animation-delay: $delay_sec;
+   -moz-animation-delay: $delay_sec;
+   animation-delay: $delay_sec;
+}
+
+
+.fadeInDown#mitsubishi, .fadeInDown#mazda {
+   @include animation-delay(.3s);
+}
+
+.fadeInDown#subaru, .fadeInDown#toyota {
+   @include animation-delay(0s);
+}
+
+.fadeOutUp#mitsubishi, .fadeOutUp#mazda,
+.fadeOutDown#mitsubishi, .fadeOutDown#mazda {
+   @include animation-delay(.3s);
+}
+
+.fadeOutUp#subaru, .fadeOutUp#toyota,
+.fadeOutDown#subaru, .fadeOutDown#toyota {
+   @include animation-delay(0s);
+}
