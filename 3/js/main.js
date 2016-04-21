@@ -5,18 +5,18 @@ $('.tracked-jap').waypoint(function(dir){
       offset: '50%'
 });
 
-$('.tracked-jap').waypoint(function(dir){      
-      $('li#jap').addClass('active');
-      $('li#ger').removeClass('active');
-      $('li#amer').removeClass('active');
-   }, {
-      offset: '50%'
-});
+// $('.tracked-jap').waypoint(function(dir){      
+//       $('li#jap').addClass('active');
+//       $('li#ger').removeClass('active');
+//       $('li#amer').removeClass('active');
+//    }, {
+//       offset: '50%'
+// });
 
-$('.tracked-jap').waypoint(function(dir){      
-      $('li#jap').removeClass('active');
-   }, {
-      offset: 50
+// $('.tracked-jap').waypoint(function(dir){      
+//       $('li#jap').removeClass('active');
+//    }, {
+//       offset: 50
 });
 
 // ===============================
